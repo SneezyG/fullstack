@@ -1,0 +1,419 @@
+
+    /* this animate the notify bar */  
+    @keyframes jumperAnime {
+      0% {opacity: 1;}
+      100% {opacity: 0.5;}
+     }
+     
+     /* Handle */
+     ::-webkit-scrollbar-thumb {
+        background: rgba(255, 165, 0, 0.5); 
+        border-radius: 3px;
+      }
+      
+      /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 165, 0, 1); 
+      }
+      
+     
+     
+     #content {
+       display: flex;
+       flex-direction: column;
+       background-color: #4682B4;
+       height: 100%;
+     }
+     
+     main {
+       flex: 1;
+       overflow: auto;
+     }
+     
+     main::-webkit-scrollbar {
+       width: 7px;
+     }
+     
+     main::-webkit-scrollbar-track {
+       box-shadow: inset 0 0 5px grey; 
+       border-radius: 3px;
+     }
+    
+      header {
+        background-color: black;
+      }
+      
+      .header-container {
+        margin: auto;
+      }
+      
+      header div {
+        text-align: center;
+      }
+      
+      header a {
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        padding-bottom: 2px;
+        cursor: pointer;
+        text-decoration: none;
+        animation: jumperAnime;
+        animation-duration: 0.3s;
+        animation-play-state: paused;
+      }
+      
+      a.intro {
+        font-size: 15px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #FFD700;
+      }
+      
+      section.first {
+        background-image: url("back.jpg");
+        background-size: cover;
+        background-attachment: scroll;
+        padding: 30px 0 60px 0;
+      }
+      
+      .first-content {
+        margin: auto;
+        width: 70%
+        /*border: 1px solid red;*/
+      }
+      
+      .inner-columns {
+        display: flex;
+        column-gap: 20px;
+        overflow-x: scroll;
+        padding: 30px;
+        /*border: 1px solid red;*/
+      }
+      
+     .inner-columns::-webkit-scrollbar {
+       height: 4px;
+     }
+       
+      .first-pic, .first-columns {
+        /*border: 1px solid green;*/
+      }
+      
+      .first-pic > img {
+        width: 240px;
+        border-radius: 48%;
+        position: relative;
+        box-shadow: 0 0 20px 10px lightgrey;
+      }
+      
+      .scroll-columns {
+        text-align: center;
+        padding-top: 180px;
+      }
+      
+      .scroll-columns > span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #C0C0C0;
+        border: 2px solid #FFA500;
+        border-radius: 50%;
+        margin: 0 20px;
+        cursor: pointer;
+      }
+      
+      span.meth {
+        background-color: #4682B4;
+      }
+      
+      .first-para {
+        flex: 0 0 540px;
+        background-color: rgba(173, 216, 230, 0.4);
+        padding: 25px 25px 30px 25px;
+        border-radius: 30px;
+        backdrop-filter: blur(5px);
+        font-size: 15px;
+        color: black !important;
+      }
+      
+      .first-para > p {
+        margin-bottom: 0;
+      }
+      
+      .first-para > h6 {
+        text-transform: uppercase;
+        text-align: center;
+        font-style: italic;
+      }
+      
+      section.second {
+        margin-top: 10px;
+        margin-bottom: 80px;
+        color: white;
+      }
+      
+      h5 {
+        text-align: center;
+      }
+      
+      h5 > span {
+        border-bottom: 2px solid #FFA500;
+        text-transform: uppercase;
+      }
+      
+      .skill, .cert {
+        /*border: 1px solid red;*/
+        margin-bottom: 40px;
+      }
+      
+      .cert {
+        padding-left: 0;
+      }
+      
+      .skill-head {
+        text-transform: uppercase;
+        color: #FFFDD0;
+      }
+      
+      .skill-row {
+        padding-left: 25px;
+      }
+      
+      .skill-row > span::before, .cert-row > span::before {
+        content: '%';
+        color: lightgrey;
+        font-size: 15px;
+        padding-right: 5px;
+      }
+      
+      .cert-row {
+        border-left: 2px solid #FFA500;
+        padding-bottom: 20px;
+      }
+      
+      .cert-row a, .skill-row > span {
+        color: white;
+        text-transform: capitalize;
+      }
+      
+      footer {
+        background-color: black;
+        padding: 100px 30px 0 30px;
+        color: white;
+      }
+      
+      .contact-head {
+        text-align: center;
+      }
+      
+      .contact-name {
+        color: #FFFDD0;
+      }
+      
+      .contact-info, .contact-info > a {
+        color: lightblue;
+        font-size: 15px;
+      }
+      
+      .copyright {
+        font-size: 11px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      
+      section.third {
+        margin-bottom: 150px;
+        padding: 20px;
+        color: white;
+      }
+      
+      .first-accord button, .first-accord {
+        border-radius: 20px 20px 0 0 !important;
+      }
+      
+      .last-accord button, .last-accord {
+        border-radius: 0 0 20px 20px !important;
+      }
+      
+      .icon {
+        display: inline-block;
+        margin: 25px 0 15px 0;
+        font-size: 60px;
+        color: #FFA500;
+      }
+      
+      .accordion-button {
+        text-transform: capitalize;
+      }
+      
+      .accordion-body {
+        padding-right: 5px;
+        padding-left: 10px;
+      }
+      
+      
+      .project {
+        display: flex;
+        overflow-x: scroll;
+        column-gap: 15px;
+        padding-bottom: 10px;
+      }
+      
+      .project::-webkit-scrollbar {
+        height: 4px;
+      }
+      
+      .project-head, .project-body {
+        padding: 10px;
+        flex: 0 0 auto;
+        border: 1px dotted #FFA500;
+      }
+      
+      .project-body {
+        width: 1250px;
+        columns: auto 250px;
+        column-gap: 40px;
+        padding-top: 20px;
+        padding-right: 40px;
+        word-break: break-all;
+      }
+      
+      .project-body > p {
+        font-size: 15px;
+      }
+      
+      .project-head > img {
+        height: 350px;
+      }
+      
+      .story {
+        break-before: column;
+      }
+     
+     .passage {
+       line-height: 28px;
+     }
+     
+     .location {
+       font-style: italic;
+     }
+     
+     .carousel-inner {
+        /*border: 1px solid red;*/
+        width: 40%;
+        height: 700px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+      }
+      
+      .carousel-indicators {
+        position: relative;
+        top: 30px;
+      }
+       
+      .photo {
+        max-height: 600px;
+        border-radius: 20px;
+      }
+     
+
+    @media only screen and (max-width: 1200px) {
+       .first-content {
+         width: 80%;
+       }
+       
+       .first-para {
+         flex-basis: 450px;
+       }
+       
+       .carousel-inner {
+         width: 50%;
+       }
+       
+     }
+     
+    @media only screen and (max-width: 992px) {
+       .first-content {
+         width: 90%;
+       }
+       
+       .first-pic > img {
+        width: 200px;
+       }
+       
+       .first-para {
+         flex-basis: 400px;
+       }
+      
+       .carousel-inner {
+         width: 60%;
+         height: 500px;
+       }
+       
+       .photo {
+        max-height: 400px;
+       }
+     }
+     
+    @media only screen and (max-width: 768px) {
+       main::-webkit-scrollbar {
+        width: 3px;
+      }
+      
+       .scroll-columns {
+         padding-top: 60px;
+       }
+       
+       .first-content {
+         width: 100%;
+       }
+       
+       .first-pic {
+         padding-left: 70px;
+       }
+       
+       .first-para {
+         flex-basis: 350px;
+       }
+       
+       .cert {
+         margin-top: 30px;
+         padding-left: 20px;
+       }
+       
+      .cert-row {
+        border-left: none;
+      }
+      
+      .project-body {
+        width: 1400px;
+      }
+      
+      .project-head > img {
+        height: 180px;
+      }
+      
+      .carousel-inner {
+         width: 80%;
+      }
+      
+     }
+     
+    @media only screen and (max-width: 576px) {
+       .first-para {
+         /*flex-basis: 350px;*/
+       }
+       
+       .carousel-inner {
+         width: 100%;
+       }
+     }
+     
+    @media (prefers-color-scheme: dark) {
+        .first-para {
+          forced-color-adjust: none;
+          color: black !important;
+        }
+    }
+     
