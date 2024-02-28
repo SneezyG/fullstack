@@ -270,12 +270,16 @@
       }
       
       .project-body {
-        width: 1250px;
+        width: 800px;
         columns: auto 250px;
         column-gap: 40px;
         padding-top: 20px;
         padding-right: 40px;
         word-break: break-all;
+      }
+      
+      .project-ml {
+        width: 1250px;
       }
       
       .project-body > p {
@@ -315,6 +319,11 @@
       .photo {
         max-height: 600px;
         border-radius: 20px;
+      }
+      
+      .arrow {
+        background-color: black !important;
+        border-radius: 10px;
       }
      
 
@@ -386,7 +395,7 @@
         border-left: none;
       }
       
-      .project-body {
+      .project-ml {
         width: 1400px;
       }
       
