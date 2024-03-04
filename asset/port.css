@@ -278,6 +278,10 @@
         word-break: break-all;
       }
       
+      .project-fit {
+        width: 400px;
+      }
+      
       .project-ml {
         width: 1250px;
       }
